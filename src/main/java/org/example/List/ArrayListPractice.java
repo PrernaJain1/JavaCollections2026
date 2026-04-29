@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class ArrayListPractice {
 
     public static void main(String[] args) {
+        //insertion order preserved in list, duplicates allowed
         ArrayList<Integer> numbers = new ArrayList<>();
         //To add the element in arraylist
         numbers.add(10);

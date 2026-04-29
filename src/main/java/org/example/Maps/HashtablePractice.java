@@ -10,6 +10,7 @@ public class HashtablePractice {
         //hashtable slower than hashmap
         //Legacy class
         //hashtable thread safe --> hashmap not thread safe
+        //Hashtable insertion order not preserved
         Hashtable<Integer, String> ht = new Hashtable<>();
         ht.put(1,"Orange");
         ht.put(2,"Apple");

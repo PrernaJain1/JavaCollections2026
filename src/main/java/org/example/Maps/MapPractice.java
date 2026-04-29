@@ -10,6 +10,7 @@ public class MapPractice {
         //Key value pair - hashmap, linked hashmap, treemap
         //Keys are unique
         //Hashmap- random order key and values are printing - complexity O(1)
+        //Hashmap allow one null as key and value any number of null
         Map<String, Integer> map= new HashMap<>();
         map.put("One",1);
         map.put("Two",2);
