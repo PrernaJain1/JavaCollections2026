@@ -18,7 +18,7 @@ public class SetPractice {
         set.add(47);
         set.add(47); //If I am trying to add duplicate element won't give any error
 
-        System.out.println("Hash Set: "+set);
+        System.out.println("Hash Set: "+set);  //Output: "Hash Set: [32, 10, 45, 47]"
 
         System.out.println("Remove element : " + set.remove(32));
         System.out.println(set);
@@ -34,7 +34,7 @@ public class SetPractice {
         linkedHashSet.add(45);
         linkedHashSet.add(32);
         linkedHashSet.add(47);
-        System.out.println("Linked Hash set: " + linkedHashSet);
+        System.out.println("Linked Hash set: " + linkedHashSet); //Output: "Linked Hash set: [10, 45, 32, 47]"
 
         System.out.println("Remove element : " + linkedHashSet.remove(32));
         System.out.println(linkedHashSet);
@@ -50,6 +50,6 @@ public class SetPractice {
         treeSet.add(45);
         treeSet.add(32);
         treeSet.add(47);
-        System.out.println("Tree set: " + treeSet);
+        System.out.println("Tree set: " + treeSet);  //Output: "Tree set: [10, 32, 45, 47]"
     }
 }
