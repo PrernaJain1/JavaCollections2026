@@ -16,18 +16,18 @@ public class MapPractice {
         map.put("Two",2);
         map.put("Three",3);
         map.put("Two",4); //Here the value of key will get override
-        System.out.println("Printing map: "+ map);
+        System.out.println("Printing map: "+ map);  // Printing map: {One=1, Two=4, Three=3}
 
         //To check if map contains a key or not
-        System.out.println("To check if map contains a key or not: "+map.containsKey("Three"));
+        System.out.println("To check if map contains a key or not: "+map.containsKey("Three"));  //To check if map contains a key or not: true
         //To check if map contains a value or not
-        System.out.println("To check if map contains a value or not: "+map.containsValue(3));
+        System.out.println("To check if map contains a value or not: "+map.containsValue(3));   //To check if map contains a value or not: true
         //To check map is empty or not
-        System.out.println("To check map is empty or not: "+ map.isEmpty() );
+        System.out.println("To check map is empty or not: "+ map.isEmpty() );  //To check map is empty or not: false
 
         //If key is not there add it
         map.putIfAbsent("Six",6);
-        System.out.println("Printing map: "+ map);
+        System.out.println("Printing map: "+ map); //Printing map: {Six=6, One=1, Two=4, Three=3}
 
         //Iterating map
         for(Map.Entry<String,Integer> e: map.entrySet()){
@@ -47,8 +47,8 @@ public class MapPractice {
         }
 
         //To remove a particular key value
-        System.out.println("Removing key and value pair: "+map.remove("Three"));
-        System.out.println(map);
+        System.out.println("Removing key and value pair: "+map.remove("Three")); //Removing key and value pair: 3
+        System.out.println(map); //{Six=6, One=1, Two=4}
 
         map.clear(); //To delete all the values and keys
         System.out.println(map);
@@ -56,18 +56,19 @@ public class MapPractice {
 
         //Linked hash map - keys linked to each other
         Map<String, Integer> linkedHashMap= new LinkedHashMap<>();
-        linkedHashMap.put("One",1);
         linkedHashMap.put("Two",2);
+        linkedHashMap.put("Five",5);
+        linkedHashMap.put("One",1);
         linkedHashMap.put("Three",3);
-        System.out.println("Printing Linked hash map: "+ linkedHashMap);
+        System.out.println("Printing Linked hash map: "+ linkedHashMap);  //Printing Linked hash map: {Two=2, Five=5, One=1, Three=3}
 
         //TreeMap - will print in the sort order of the keys - Complexity O(log n)
         //for string - dictionary order
         Map<String, Integer> treeMap= new TreeMap<>();
-        treeMap.put("One",1);
         treeMap.put("Two",2);
+        treeMap.put("Five",5);
+        treeMap.put("One",1);
         treeMap.put("Three",3);
-        System.out.println("Printing tree map: "+ treeMap);
-
+        System.out.println("Printing tree map: "+ treeMap); //Printing tree map: {Five=5, One=1, Three=3, Two=2}
     }
 }

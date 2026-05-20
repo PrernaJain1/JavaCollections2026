@@ -20,11 +20,11 @@ public class SetPractice {
 
         System.out.println("Hash Set: "+set);  //Output: "Hash Set: [32, 10, 45, 47]"
 
-        System.out.println("Remove element : " + set.remove(32));
-        System.out.println(set);
-        System.out.println("Contain ele or not: " + set.contains(45));
-        System.out.println("If set is empty or not : " + set.isEmpty());
-        System.out.println("Size of set: " + set.size());
+        System.out.println("Remove element : " + set.remove(32)); //Remove element : true
+        System.out.println(set);  //[10, 45, 47]
+        System.out.println("Contain ele or not: " + set.contains(45)); //Contain ele or not: true
+        System.out.println("If set is empty or not : " + set.isEmpty()); //If set is empty or not : false
+        System.out.println("Size of set: " + set.size()); //Size of set: 3
         System.out.println("To clear the set: ");
         set.clear();
 

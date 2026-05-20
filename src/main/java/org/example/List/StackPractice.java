@@ -12,14 +12,14 @@ public class StackPractice {
         names.push("Pink");
         names.push("Blue");
 
-        System.out.println(names);
+        System.out.println(names); //[Yellow, Pink, Blue]
 
         //To check element present at the top
-        System.out.println("Element at top: " + names.peek());
+        System.out.println("Element at top: " + names.peek()); //Element at top: Blue
 
         //To remove element
-        System.out.println(names.pop());
-        System.out.println(names);
+        System.out.println(names.pop()); //Blue
+        System.out.println(names);  //[Yellow, Pink]
 
 
 
