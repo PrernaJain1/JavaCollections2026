@@ -53,6 +53,9 @@ public class ArrayListPractice {
         numbers.clear();
         System.out.println(numbers);
 
-//        List<Integer> numbers1 = new LinkedList<>();
+        //Which method is used to convert a Java List to an array? - toArray()
+
+        //List<Integer> numbers1 = new LinkedList<>();
+
     }
 }

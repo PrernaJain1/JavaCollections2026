@@ -25,6 +25,10 @@ public class CollectionsPractice {
         Collections.sort(l, Comparator.reverseOrder());
         System.out.println("Sorted descending list: "+ l);
 
+        //To randomly shuffle elements in a collection
+        Collections.shuffle(l);
+        System.out.println("Randomly shuffle elements" + l);
+
 
     }
 }
